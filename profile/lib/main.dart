@@ -19,6 +19,22 @@ class MyProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Իմ էջը',
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w800
+          )
+        ),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Text(
+          'Բարև Ձեզ ես Արմեն Ասլիկյանն։'
+        ),
+      ),
+    );
   }
 }
