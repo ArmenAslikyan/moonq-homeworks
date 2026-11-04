@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711260690052",
+    "project_id": "vanadzor-quiz",
+    "storage_bucket": "vanadzor-quiz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711260690052:android:1ceebcc13e84e58eea14d1",
+        "android_client_info": {
+          "package_name": "com.armen.vanadzor_quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhSErTjQhMF4rY8bN8zuE66PB_pZWguPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

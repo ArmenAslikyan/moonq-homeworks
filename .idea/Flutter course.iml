@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Football/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Football/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Football/build" />
+      <excludeFolder url="file://$MODULE_DIR$/akinator/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/akinator/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/akinator/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_lesson/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_lesson/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_lesson/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store/build" />
+      <excludeFolder url="file://$MODULE_DIR$/food_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/food_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/food_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/library_management_system/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/library_management_system/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/library_management_system/build" />
+      <excludeFolder url="file://$MODULE_DIR$/church/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/church/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/church/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nike/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nike/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nike/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/jni/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/jni/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/jni/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/jni/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/jni/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/jni/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/jni/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/jni/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/jni/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/jni/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/jni/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/jni/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/nutritions_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Cappuccino/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Cappuccino/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Cappuccino/build" />
+      <excludeFolder url="file://$MODULE_DIR$/billing_page/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/billing_page/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/billing_page/build" />
+      <excludeFolder url="file://$MODULE_DIR$/weather_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/weather_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/weather_app/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
