@@ -4,7 +4,15 @@ class ToDoProvider extends ChangeNotifier {
   final List<String> toDos = [];
 
   void add(String toDo) {
-    toDos.add(toDo);
+    final trimmedToDo = toDo.trim();
+    if (trimmedToDo.isEmpty) return;
+
+    toDos.add(trimmedToDo);
+    notifyListeners();
+  }
+
+  void delete(int index) {
+    toDos.removeAt(index);
     notifyListeners();
   }
 }
