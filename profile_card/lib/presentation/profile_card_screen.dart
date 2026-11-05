@@ -8,14 +8,16 @@ class ProfileCardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 159, 217, 189),
-      body: SingleChildScrollView(
-        child: SafeArea(
-          child: Center(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 30.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 30.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
                   const SizedBox(height: 20),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(100),
@@ -61,7 +63,8 @@ class ProfileCardScreen extends StatelessWidget {
                     icon: Icons.location_on,
                     text: 'Vandzor',
                   ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

@@ -9,7 +9,7 @@ class ProfileCard extends StatelessWidget {
     return MaterialApp(
       title: 'Profile Card',
       debugShowCheckedModeBanner: false,
-      home: ProfileCardScreen(),
+      home: const ProfileCardScreen(),
     );
   }
 }
