@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lessons/provider/mode_provider.dart';
-import 'package:lessons/ui/mode.dart';
-import 'package:provider/provider.dart';
+import 'package:lessons/ui/button.dart';
+import 'package:lessons/ui/listview.dart';
+
 void main() {
   runApp(
     const MyApp()
@@ -13,13 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => ModeProvider(),
-      child: MaterialApp(
-        title: 'Lessons',
-        debugShowCheckedModeBanner: false,
-        home: const Mode(),
-      ),
+    return MaterialApp(
+      title: 'Lessons',
+      debugShowCheckedModeBanner: false,
+      home: const Listview(),
     );
   }
 }
