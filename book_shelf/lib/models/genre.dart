@@ -7,7 +7,6 @@ enum Genre {
   poetry('Բանաստեղծություն', Icons.history_edu, Colors.pink),
   detective('Դետեկտիվ', Icons.search, Colors.teal);
 
-
   const Genre(this.name, this.icon, this.color);
 
   final String name;

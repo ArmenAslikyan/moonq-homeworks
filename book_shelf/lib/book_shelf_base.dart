@@ -9,7 +9,7 @@ class BookShelfBase extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Book shelf',
-      home: BookShelfHomeScreen()
+      home: BookShelfHomeScreen(),
     );
   }
 }

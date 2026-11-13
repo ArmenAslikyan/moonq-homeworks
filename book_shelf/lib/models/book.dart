@@ -1,6 +1,6 @@
 import 'package:book_shelf/models/genre.dart';
 
-class Book{
+class Book {
   final int id;
   final String title;
   final String author;
@@ -17,5 +17,14 @@ class Book{
     this.rating,
   });
 
-  
+  Book copyWith({bool? isRead, int? rating}) {
+    return Book(
+      id: id,
+      title: title,
+      author: author,
+      genre: genre,
+      isRead: isRead ?? this.isRead,
+      rating: rating ?? this.rating,
+    );
+  }
 }
