@@ -14,16 +14,14 @@ class BookShelfHomeScreen extends StatefulWidget {
 }
 
 class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
-  List<Book> books = initialBooks;
-  List<Book> shownBooks = initialBooks;
+  List<Book> books = List.of(initialBooks);
+  List<Book> shownBooks = List.of(initialBooks);
   final TextEditingController nameSearch = TextEditingController();
-  int readBooksCounter = 0;
   Genre? _selectedGenre;
 
   @override
   void initState() {
     super.initState();
-    readBooks();
   }
 
   @override
@@ -35,7 +33,7 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Կարդացված՝ $readBooksCounter / 10')),
+      appBar: AppBar(title: Text('Կարդացված՝ $readCount / ${books.length}')),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -46,6 +44,9 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
                 prefixIcon: Icon(Icons.search),
                 suffixIcon: IconButton(
                   onPressed: () {
+                    setState(() {
+                      _selectedGenre = null;
+                    });
                     nameSearch.clear();
                     _refreshShownBooks();
                   },
@@ -152,7 +153,6 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
     if (index == -1) return;
     setState(() {
       books[index] = book.copyWith(isRead: !book.isRead);
-      readBooks();
       _refreshShownBooks();
     });
   }
@@ -167,7 +167,6 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
     if (index == -1) return;
     setState(() {
       books[index] = books[index].copyWith(rating: rating, isRead: true);
-      readBooks();
       _refreshShownBooks();
     });
   }
@@ -178,7 +177,6 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
     setState(() {
       books.removeAt(originalIndex);
       _refreshShownBooks();
-      readBooks();
     });
     ScaffoldMessenger.of(context)
       ..hideCurrentSnackBar()
@@ -192,7 +190,6 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
                 final index = originalIndex.clamp(0, books.length);
                 books.insert(index, book);
                 _refreshShownBooks();
-                readBooks();
               });
             },
           ),
@@ -200,13 +197,5 @@ class _BookShelfHomeScreenState extends State<BookShelfHomeScreen> {
       );
   }
 
-  void readBooks() {
-    readBooksCounter = 0;
-
-    for (final book in books) {
-      if (book.isRead) {
-        readBooksCounter++;
-      }
-    }
-  }
+  int get readCount => books.where((book) => book.isRead).length;
 }

@@ -1,4 +1,5 @@
 import 'package:book_shelf/models/book.dart';
+import 'package:book_shelf/presentation/widgets/rating_stars.dart';
 import 'package:flutter/material.dart';
 
 class BookTile extends StatelessWidget {
@@ -25,28 +26,7 @@ class BookTile extends StatelessWidget {
         ),
       ),
       subtitle: Text('${book.author} • ${book.genre.name}'),
-      trailing: book.rating == null ? null : _RatingStars(rating: book.rating!),
-    );
-  }
-}
-
-class _RatingStars extends StatelessWidget {
-  const _RatingStars({required this.rating});
-
-  final int rating;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: List.generate(
-        5,
-        (index) => Icon(
-          index < rating ? Icons.star : Icons.star_border,
-          size: 18,
-          color: Colors.amber,
-        ),
-      ),
+      trailing: book.rating == null ? null : RatingStars(rating: book.rating!),
     );
   }
 }

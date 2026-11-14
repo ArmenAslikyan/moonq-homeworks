@@ -1,4 +1,5 @@
 import 'package:book_shelf/models/book.dart';
+import 'package:book_shelf/presentation/widgets/rating_stars.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsScreen extends StatefulWidget {
@@ -30,15 +31,9 @@ class _BookDetailsScreenState extends State<BookDetailsScreen> {
             Text('Հեղինակ՝ ${widget.book.author}'),
             Text('Ժանր՝ ${widget.book.genre.name}'),
             const SizedBox(height: 24),
-            Row(
-              children: List.generate(
-                5,
-                (index) => IconButton(
-                  onPressed: () => setState(() => _rating = index + 1),
-                  icon: Icon(index < _rating ? Icons.star : Icons.star_border),
-                  color: Colors.amber,
-                ),
-              ),
+            RatingStars(
+              rating: _rating,
+              onRatingChanged: (rating) => setState(() => _rating = rating),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
