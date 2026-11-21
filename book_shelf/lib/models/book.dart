@@ -16,7 +16,6 @@ class Book {
     this.isRead = false,
     this.rating,
   });
-
   Book copyWith({bool? isRead, int? rating}) {
     return Book(
       id: id,
